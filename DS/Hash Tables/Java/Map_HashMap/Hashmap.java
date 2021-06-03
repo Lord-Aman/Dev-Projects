@@ -1,5 +1,7 @@
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class Hashmap {
     public static void main(String[] args) {
@@ -7,7 +9,6 @@ public class Hashmap {
         // Key : Value Pair
         // Key : Employee Number (Integer)
         // Value : Name (String)
-        
 
         Map<Integer, String> map = new HashMap<>();
 
@@ -17,5 +18,9 @@ public class Hashmap {
 
         System.out.println(map);
 
+        // Iterate
+        Set<Integer> keys = map.keySet();// map.keySet() returns a set of all the keys
+        for (int key : keys)
+            System.out.print(key + " ");
     }
 }
