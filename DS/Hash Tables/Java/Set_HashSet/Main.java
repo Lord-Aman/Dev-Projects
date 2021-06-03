@@ -8,7 +8,7 @@ public class Main {
         // Set doesn't allow duplicate keys
         Set<Integer> set = new HashSet<>();
 
-        int[] numbers= {2,3,4,3,2,3,4,5,4,56,6,7,5,5,4,32,3,2,2,1};
+        int[] numbers= {1,3,2,2,3,1,6,2,5};
 
         for(var number : numbers){
             set.add(number);
