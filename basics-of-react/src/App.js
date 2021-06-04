@@ -19,51 +19,37 @@ const App = () => {
       objectID: 1,
     }
   ];  
-  // A callback function gets introduced (A)
+  /*const [getter,setter] = React.useState(initial state) */
+    const [searchTerm, setSearchTerm] = React.useState('');
+
   const handleSearch = event =>{
-    
-    //It calls back to the place it was introduced (C)
-    console.log(event.target.value);
+    setSearchTerm(event.target.value);
   }
+  
+  const searchedStories = stories.filter( (story) => {
+    return story.title.includes(searchTerm);
+  } )
 
   return (
     <div>
       <h1>My Hacker Stories</h1>
-      <Search onSearch = {handleSearch} />
+      <Search onSearch={handleSearch} />
       <hr />
 
-      <List  list={stories}/>{/*Passing stories as the name "list" */}
+      <List  list={searchedStories}/>{/*Passing stories as the name "list" */}
     </div>
   )
 }
 
 const Search = (props) => {
-  /*const [getter,setter] = React.useState(initial state) */
-  const [searchTerm, setSearchTerm] = React.useState('');
-
-  const handleChange = (event) => {
-    setSearchTerm(event.target.value);
-
-    props.onSearch(event);
-  }
-
   return(
   <div>
       <label htmlFor="search">Search: </label>
       <input 
       id="search" 
       type="text" 
-      onChange={handleChange}
+      onChange={props.onSearch}
       />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br>
-      </br>
-
-      <p>
-      Searching for <strong>{searchTerm}</strong>
-      </p>
   </div>
   )
 
