@@ -18,30 +18,55 @@ const App = () => {
       points: 5,
       objectID: 1,
     }
-  ];
-
-  //Do something here
-  const handleChange = event => {
+  ];  
+  // A callback function gets introduced (A)
+  const handleSearch = event =>{
+    
+    //It calls back to the place it was introduced (C)
     console.log(event.target.value);
   }
-
 
   return (
     <div>
       <h1>My Hacker Stories</h1>
+      <Search onSearch = {handleSearch} />
+      <hr />
 
+      <List  list={stories}/>{/*Passing stories as the name "list" */}
+    </div>
+  )
+}
+
+const Search = (props) => {
+  /*const [getter,setter] = React.useState(initial state) */
+  const [searchTerm, setSearchTerm] = React.useState('');
+
+  const handleChange = (event) => {
+    setSearchTerm(event.target.value);
+
+    props.onSearch(event);
+  }
+
+  return(
+  <div>
       <label htmlFor="search">Search: </label>
       <input 
       id="search" 
       type="text" 
       onChange={handleChange}
       />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br>
+      </br>
 
-      <hr />
-
-      <List  list={stories}/>{/*Passing stories as the name "list" */}
-    </div>
+      <p>
+      Searching for <strong>{searchTerm}</strong>
+      </p>
+  </div>
   )
+
 }
 
 const List = (props) =>
