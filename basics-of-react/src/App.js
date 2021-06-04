@@ -24,9 +24,7 @@ const App = () => {
   const handleChange = event => {
     console.log(event.target.value);
   }
-  const handleClick = event => {
-    console.log( event.target.value + " is Clicked")
-  }
+
 
   return (
     <div>
@@ -37,9 +35,6 @@ const App = () => {
       id="search" 
       type="text" 
       onChange={handleChange}
-      onFocuse = { () => {console.log("Focused on Input")} }
-      onBlur = { () => {console.log("Blur on Input")} }
-      onClick = {handleClick}
       />
 
       <hr />
