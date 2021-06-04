@@ -16,21 +16,38 @@ const list = [
     num_comments: 2,
     points: 5,
     objectID: 1,
-  },
+  }
 ];
 
-const App = () => (
-  <div>
-    <h1>My Hacker Stories</h1>
+const App = () => {
+  //Do something here
+  const handleChange = event => {
+    console.log(event.target.value);
+  }
+  const handleClick = event => {
+    console.log( event.target.value + " is Clicked")
+  }
 
-    <label htmlFor="search">Search: </label>
-    <input id="search" type="text" />
+  return (
+    <div>
+      <h1>My Hacker Stories</h1>
 
-    <hr />
+      <label htmlFor="search">Search: </label>
+      <input 
+      id="search" 
+      type="text" 
+      onChange={handleChange}
+      onFocuse = { () => {console.log("Focused on Input")} }
+      onBlur = { () => {console.log("Blur on Input")} }
+      onClick = {handleClick}
+      />
 
-    <List />
-  </div>
-);
+      <hr />
+
+      <List />
+    </div>
+  )
+}
 
 const List = () =>
   list.map(item => (
