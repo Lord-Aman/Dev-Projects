@@ -4,7 +4,7 @@ let i = 0;
 let w = 10;
 
 function setup() {
-    createCanvas(fullScreen());
+    createCanvas(1200, 600);
     values = new Array(floor(width / w));
     for (let i = 0; i < values.length; i++) {
         values[i] = random(height);
