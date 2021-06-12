@@ -57,7 +57,7 @@ const Search = ({ search, onSearch }) => {
 
 }
 
-const List = ({ list }) => list.map(item => <Item key={item.objectID} item={item}/>);
+const List = ({ list }) => list.map(item => <Item key={item.objectID} item={item} />);
 
 const Item = ({ item }) => (
   <div>
