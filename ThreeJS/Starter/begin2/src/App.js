@@ -15,10 +15,7 @@ class App extends Component {
       worldDepth = 256;
     const clock = new THREE.Clock();
 
-    init();
-    animate();
-
-    function init() {
+    const init = () => {
       container = document.getElementById("container");
 
       camera = new THREE.PerspectiveCamera(
@@ -66,19 +63,21 @@ class App extends Component {
       renderer = new THREE.WebGLRenderer();
       renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(window.innerWidth, window.innerHeight);
-      container.appendChild(renderer.domElement);
-
+      //   this.mount.appendChild(renderer.domElement);
+      this.mount.appendChild(renderer.domElement);
       controls = new FirstPersonControls(camera, renderer.domElement);
       controls.movementSpeed = 150;
       controls.lookSpeed = 0.1;
 
       stats = new Stats();
-      container.appendChild(stats.dom);
+      this.mount.appendChild(stats.dom);
 
       //
 
       window.addEventListener("resize", onWindowResize);
-    }
+    };
+    init();
+    animate();
 
     function onWindowResize() {
       camera.aspect = window.innerWidth / window.innerHeight;
