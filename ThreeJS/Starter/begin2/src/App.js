@@ -1,6 +1,7 @@
 import react, { Component } from "react";
 import * as THREE from "three";
 import Stats from "./jsm/libs/stats.module.js";
+import "./App.css";
 
 import { FirstPersonControls } from "./jsm/controls/FirstPersonControls.js";
 import { ImprovedNoise } from "./jsm/math/ImprovedNoise.js";
@@ -198,9 +199,15 @@ class App extends Component {
   }
   render() {
     return (
-      <>
-        <div ref={(ref) => (this.mount = ref)} />
-      </>
+      <div className="container">
+        <h1 className="heading">👋 It's Aman Here</h1>
+        <div className="head-para">
+          <p>Left Click to Move Forward</p>
+          <p>Right Click to Move Backward</p>
+          <p>Move the cursor to rotate</p>
+        </div>
+        <div className="canvas" ref={(ref) => (this.mount = ref)} />
+      </div>
     );
   }
 }
