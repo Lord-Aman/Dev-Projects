@@ -69,8 +69,8 @@ class App extends Component {
       controls.movementSpeed = 150;
       controls.lookSpeed = 0.1;
 
-      stats = new Stats();
-      this.mount.appendChild(stats.dom);
+      //   stats = new Stats();
+      //   this.mount.appendChild(stats.dom);
 
       //
 
@@ -188,7 +188,7 @@ class App extends Component {
       requestAnimationFrame(animate);
 
       render();
-      stats.update();
+      //   stats.update();
     }
 
     function render() {
@@ -197,7 +197,11 @@ class App extends Component {
     }
   }
   render() {
-    return <div ref={(ref) => (this.mount = ref)} />;
+    return (
+      <>
+        <div ref={(ref) => (this.mount = ref)} />
+      </>
+    );
   }
 }
 
