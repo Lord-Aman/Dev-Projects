@@ -200,11 +200,11 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className="heading">👋 It's Aman Here</h1>
+        <h1 className="heading">👋 Tech Master GoGo</h1>
         <div className="head-para">
-          <p>Left Click to Move Forward</p>
+          {/* <p>Left Click to Move Forward</p>
           <p>Right Click to Move Backward</p>
-          <p>Move the cursor to rotate</p>
+          <p>Move the cursor to rotate</p> */}
         </div>
         <div className="canvas" ref={(ref) => (this.mount = ref)} />
       </div>
