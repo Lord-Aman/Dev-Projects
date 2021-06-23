@@ -14,7 +14,7 @@ body {
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   line-height: 1.53846154;
-  background: url("../../assets/helloSVG.svg") repeat;
+  background: white;
 }
 :focus {
   outline: 0 none !important;

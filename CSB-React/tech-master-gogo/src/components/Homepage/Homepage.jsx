@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
 import "./Homepage.css";
+import logo from "../../assets/logo.png";
 
 function Homepage() {
   return (
@@ -15,8 +16,12 @@ function Homepage() {
                   {" "}
                   <a class="" href="#">
                     <img
-                      src="logo.png"
-                      style="width: 70px; height: 80px; margin-left: 82%;"
+                      src={logo}
+                      style={{
+                        width: "70px",
+                        height: "80px",
+                        marginLeft: "82%",
+                      }}
                     />
                   </a>
                 </div>
@@ -57,7 +62,7 @@ function Homepage() {
         <div class="row">
           <div class="col-md-12 col-12">
             <div class="col-md-6 contentpart">
-              <div class="txt-part" style="padding: 88px;">
+              <div class="txt-part" style={{ padding: "88px" }}>
                 <h1>Your Company Slogan Here</h1>
                 <p>
                   Add your company's tagline,profile its Key mission, or
@@ -77,7 +82,12 @@ function Homepage() {
                 <img
                   src="https://i.stack.imgur.com/y9DpT.jpg"
                   alt="Paris"
-                  style="width:100%; height:100%; padding-top: 30px;padding-right:60px;"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    paddingTop: "30px",
+                    paddingRight: "60px",
+                  }}
                 />
               </div>
             </div>
