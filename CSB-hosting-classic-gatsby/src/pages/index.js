@@ -5,7 +5,7 @@ import "assets/css/react-slick.css";
 import "react-modal-video/css/modal-video.min.css";
 import "typeface-bree-serif";
 import "typeface-dm-sans";
-
+import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import { StickyProvider } from "contexts/app/app.provider";
 import SEO from "components/seo";
 import Layout from "components/layout";
@@ -26,6 +26,7 @@ export default function IndexPage() {
         {/* How We Work Ends Here  */}
         {/* <ProductFeature /> */}
         <Services />
+        <Testimonial />
         <CustomerSupport />
       </Layout>
     </StickyProvider>
