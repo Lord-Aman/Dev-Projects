@@ -1,41 +1,41 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container } from 'theme-ui';
-import SectionHeading from 'components/section-heading';
-import ServiceCard from 'components/service-card';
+import { jsx, Box, Container } from "theme-ui";
+import SectionHeading from "components/section-heading";
+import ServiceCard from "components/service-card";
 
 const services = [
   {
-    title: 'Cloud Hosting',
-    price: 0.63,
+    title: "Cloud Hosting",
+    description: "Some Description Here",
   },
   {
-    title: 'Web Hosting',
-    price: 0.75,
+    title: "Web Hosting",
+    description: "Some Description Here",
   },
   {
-    title: 'VPS Hosting',
-    price: 0.68,
+    title: "VPS Hosting",
+    description: "Some Description Here",
   },
   {
-    title: 'Wordpress Hosting',
-    price: 0.72,
+    title: "Wordpress Hosting",
+    description: "Some Description Here",
   },
   {
-    title: 'Domains',
-    price: 0.63,
+    title: "Domains",
+    description: "Some Description Here",
   },
   {
-    title: 'Email Hosting',
-    price: 0.56,
+    title: "Email Hosting",
+    description: "Some Description Here",
   },
   {
-    title: 'VPN Service',
-    price: 0.69,
+    title: "VPN Service",
+    description: "Some Description Here",
   },
   {
-    title: 'Image Cloud',
-    price: 0.75,
+    title: "Image Cloud",
+    description: "Some Description Here",
   },
 ];
 
@@ -44,8 +44,8 @@ const Services = () => {
     <Box as="section" id="services" sx={styles.section}>
       <Container>
         <SectionHeading
-          slogan="Ideal solutions for you"
-          title="Didn’t find what you were looking for?"
+          // slogan="Our Services"
+          title="Our Services"
         />
         <Box sx={styles.grid}>
           {services.map((service, i) => (
@@ -61,21 +61,21 @@ export default Services;
 
 const styles = {
   section: {
-    pt: ['70px', null, null, null, '100px', null, '140px'],
+    pt: ["70px", null, null, null, "100px", null, "140px"],
     pb: [12, null, null, null, null, 15],
   },
   grid: {
     gap: [3, null, null, 4],
-    display: 'grid',
-    justifyContent: 'center',
+    display: "grid",
+    justifyContent: "center",
     gridTemplateColumns: [
-      'repeat(2, 1fr)',
+      "repeat(2, 1fr)",
       null,
       null,
-      'repeat(3, 1fr)',
+      "repeat(3, 1fr)",
       null,
-      'repeat(4, 1fr)',
-      'repeat(4, 300px)',
+      "repeat(4, 1fr)",
+      "repeat(4, 300px)",
     ],
   },
 };
