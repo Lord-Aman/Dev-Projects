@@ -14,6 +14,7 @@ import Features from "sections/features";
 import Services from "sections/services";
 import ProductFeature from "sections/product-feature";
 import CustomerSupport from "sections/customer-support";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 export default function IndexPage() {
   return (
@@ -25,6 +26,7 @@ export default function IndexPage() {
         {/* How We Work Ends Here  */}
         {/* <ProductFeature /> */}
         <Services />
+        <Testimonials />
         <CustomerSupport />
       </Layout>
     </StickyProvider>
