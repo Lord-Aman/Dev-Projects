@@ -40,7 +40,7 @@ const styles = (theme) => ({
   brandText: {
     fontFamily: "'Baloo Bhaijaan', cursive",
     fontWeight: 400,
-    color: theme.palette.common.white,
+    color: theme.palette.common.darkBlack,
   },
   footerLinks: {
     marginTop: theme.spacing(2.5),
@@ -61,7 +61,7 @@ const styles = (theme) => ({
   },
   link: {
     cursor: "Pointer",
-    color: theme.palette.common.white,
+    color: theme.palette.common.darkBlack,
     transition: transitions.create(["color"], {
       duration: theme.transitions.duration.shortest,
       easing: theme.transitions.easing.easeIn,
@@ -71,7 +71,7 @@ const styles = (theme) => ({
     },
   },
   whiteBg: {
-    backgroundColor: theme.palette.common.white,
+    backgroundColor: theme.palette.common.darkBlack,
   },
 });
 

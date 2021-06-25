@@ -1,43 +1,14 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Text,
-  Image,
-  Label,
-  Input,
-  Button,
-  Link,
-} from "theme-ui";
-
-import client1 from "assets/client-1.svg";
-import client2 from "assets/client-2.svg";
-import client3 from "assets/client-3.svg";
-import sectionImage from "assets/banner-1.svg";
+import { Box, Container, Flex, Heading, Text, Image } from "theme-ui";
+import sectionImage from "assets/banner.svg";
 
 const BANNER_DATA = {
   title: "A Creative way to grow your Exciting Business ideas",
   text: "Get your tests delivered at let home collect sample from the victory of the managments that supplies best design system guidelines ever.",
-  clients: [
-    {
-      image: client1,
-      link: "#",
-    },
-    {
-      image: client2,
-      link: "#",
-    },
-    {
-      image: client3,
-      link: "#",
-    },
-  ],
   image: sectionImage,
 };
 const Banner = () => {
-  const { title, text, clients, image } = BANNER_DATA;
+  const { title, text, image } = BANNER_DATA;
   return (
     <Box as="section" id="banner" sx={styles.section}>
       <Container sx={styles.container}>
@@ -45,31 +16,6 @@ const Banner = () => {
           <Box sx={styles.content}>
             <Heading as="h2">{title}</Heading>
             <Text as="p">{text}</Text>
-            {/* <Box as="form">
-              <Label variant="styles.srOnly" htmlFor="domainName">
-                Domain Name
-              </Label>
-              <Input
-                type="text"
-                placeholder="Type your domain name"
-                name="domainName"
-                id="domainName"
-              />
-              <Button>Get Started</Button>
-            </Box> */}
-            {/* <Box sx={styles.clients}>
-              <Text as="span">Our clients</Text>
-              {clients.map(({ link, image }, index) => (
-                <Link href={link} key={`client-image-key-${index}`}>
-                  <Image
-                    src={image}
-                    width="123"
-                    height="28"
-                    alt="client image"
-                  />
-                </Link>
-              ))}
-            </Box> */}
           </Box>
           <Box sx={styles.images}>
             <Image src={image} width="740" height="558" alt="section image" />

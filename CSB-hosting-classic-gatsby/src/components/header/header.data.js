@@ -16,7 +16,7 @@ export default [
   },
   {
     path: "support",
-    label: "Contact Us",
+    label: "About Us",
     offset: -70,
   },
 ];

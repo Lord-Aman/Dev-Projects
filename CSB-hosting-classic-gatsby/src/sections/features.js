@@ -69,7 +69,7 @@ const styles = {
     textAlign: "center",
     mb: ["40px", null, null, "70px"],
     h2: {
-      color: "secondary",
+      color: "#4589d6",
       fontWeight: 500,
       fontSize: ["22px", null, null, "34px"],
       lineHeight: 1,

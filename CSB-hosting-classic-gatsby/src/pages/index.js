@@ -27,7 +27,7 @@ export default function IndexPage() {
         {/* <ProductFeature /> */}
         <Services />
         <Testimonials />
-        <CustomerSupport />
+        {/* <CustomerSupport /> */}
       </Layout>
     </StickyProvider>
   );
