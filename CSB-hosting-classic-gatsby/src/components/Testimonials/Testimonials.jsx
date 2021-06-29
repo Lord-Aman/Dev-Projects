@@ -1,221 +1,148 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "font-awesome/css/font-awesome.css";
-import "./Testimonials.css";
-function ourClients() {
-  return (
-    <section className="happyclients">
-      <div className="container headings text-center">
-        <h1 className="text-center font-weight-bold">TESTIMONIALS</h1>
-        <p className="text-capitalize pt-1 ">Our Satisfied Customer Says.</p>
-      </div>
-      <div className="container">
-        <div id="demo" className="carousel slide" data-ride="carousel">
-          <ul className="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" className="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-          </ul>
+import "glightbox/dist/css/glightbox.css";
+import "glightbox/dist/js/glightbox.min.js";
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper-bundle.min.js";
+import "remixicon/fonts/remixicon.css";
 
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <div className="row">
-                <div className="col-lg-4 col-md-4 col-12">
-                  <div className="box">
-                    <a href="#">
-                      <img
-                        src=" https://cdn.pixabay.com/photo/2016/11/01/21/11/avatar-1789663__340.png  "
-                        className="img-fluid img-thumbnail"
-                      />
-                    </a>
-                    <p className="m-4">
-                      {" "}
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <h1>Abhishek Rawe</h1>
-                    <h2>Web Developer</h2>
-                  </div>
+import testimonials1 from "assets/images/testimonials/testimonials-1.jpg";
+import testimonials2 from "assets/images/testimonials/testimonials-2.jpg";
+import testimonials3 from "assets/images/testimonials/testimonials-3.jpg";
+import testimonials4 from "assets/images/testimonials/testimonials-4.jpg";
+import testimonials5 from "assets/images/testimonials/testimonials-5.jpg";
+import "./Testimonials.css";
+
+const Testimonials = () => {
+  return (
+    <section id="testimonials" className="testimonials">
+      <div className="container" data-aos="fade-up">
+        <header className="section-header">
+          <h2>Testimonials</h2>
+          <p>What they are saying about us</p>
+        </header>
+
+        <div className="testimonials-slider swiper-container">
+          <div className="swiper-wrapper">
+            <div className="swiper-slide">
+              <div className="testimonial-item">
+                <div className="stars">
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
                 </div>
-                <div className="col-lg-4 col-md-4 col-12">
-                  <div className="box">
-                    <div>
-                      <a href="#">
-                        <img
-                          src="https://cdn.pixabay.com/photo/2016/08/28/13/12/secondlife-1625903__340.jpg "
-                          className="img-fluid img-thumbnail"
-                        />
-                      </a>
-                    </div>
-                    <p className="m-4">
-                      {" "}
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.{" "}
-                    </p>
-                    <h1>Abhishek Rawe</h1>
-                    <h2>Web Developer</h2>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-4 col-12">
-                  <div className="box">
-                    <div>
-                      <a href="#">
-                        <img
-                          src="  https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375__340.png  "
-                          className="img-fluid img-thumbnail"
-                        />
-                      </a>
-                    </div>
-                    <p className="m-4">
-                      {" "}
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <h1>Abhishek Rawe</h1>
-                    <h2>Web Developer</h2>
-                  </div>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim donec
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies
+                  eget id, aliquam eget nibh et. Maecen aliquam, risus at
+                  semper.
+                </p>
+                <div className="profile mt-auto">
+                  <img src={testimonials1} className="testimonial-img" alt="" />
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
                 </div>
               </div>
             </div>
-            <div className="carousel-item">
-              <div className="row">
-                <div className="col-lg-4 col-md-4 col-12">
-                  <div className="box">
-                    <a href="#">
-                      <img
-                        src="https://cdn.pixabay.com/photo/2017/01/31/19/07/avatar-2026510_960_720.png "
-                        className="img-fluid img-thumbnail"
-                      />
-                    </a>
-                    <p className="m-4">
-                      {" "}
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <h1>Abhishek Rawe</h1>
-                    <h2>Web Developer</h2>
-                  </div>
+
+            <div className="swiper-slide">
+              <div className="testimonial-item">
+                <div className="stars">
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
                 </div>
-                <div className="col-lg-4 col-md-4 col-12">
-                  <div className="box">
-                    <div>
-                      <a href="#">
-                        <img
-                          src=" https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png "
-                          className="img-fluid img-thumbnail"
-                        />
-                      </a>
-                    </div>
-                    <p className="m-4">
-                      {" "}
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.{" "}
-                    </p>
-                    <h1>Abhishek Rawe</h1>
-                    <h2>Web Developer</h2>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-4 col-12">
-                  <div className="box">
-                    <div>
-                      <a href="#">
-                        <img
-                          src="https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916__340.png  "
-                          className="img-fluid img-thumbnail"
-                        />
-                      </a>
-                    </div>
-                    <p className="m-4">
-                      {" "}
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <h1>Abhishek Rawe</h1>
-                    <h2>Web Developer</h2>
-                  </div>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse
+                  labore quem cillum quid cillum eram malis quorum velit fore
+                  eram velit sunt aliqua noster fugiat irure amet legam anim
+                  culpa.
+                </p>
+                <div className="profile mt-auto">
+                  <img src={testimonials2} className="testimonial-img" alt="" />
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
                 </div>
               </div>
             </div>
-            <div className="carousel-item">
-              <div className="row">
-                <div className="col-lg-4 col-md-4 col-12">
-                  <div className="box">
-                    <a href="#">
-                      <img
-                        src="  https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425__340.png "
-                        className="img-fluid img-thumbnail"
-                      />
-                    </a>
-                    <p className="m-4">
-                      {" "}
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <h1>Abhishek Rawe</h1>
-                    <h2>Web Developer</h2>
-                  </div>
+
+            <div className="swiper-slide">
+              <div className="testimonial-item">
+                <div className="stars">
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
                 </div>
-                <div className="col-lg-4 col-md-4 col-12">
-                  <div className="box">
-                    <div>
-                      <a href="#">
-                        <img
-                          src=" https://cdn.pixabay.com/photo/2018/04/28/13/18/man-3357275__340.png  "
-                          className="img-fluid img-thumbnail"
-                        />
-                      </a>
-                    </div>
-                    <p className="m-4">
-                      {" "}
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.{" "}
-                    </p>
-                    <h1>Abishek Rawe</h1>
-                    <h2>Web Developer</h2>
-                  </div>
+                <p>
+                  Enim nisi quem export duis labore cillum quae magna enim sint
+                  quorum nulla quem veniam duis minim tempor labore quem eram
+                  duis noster aute amet eram fore quis sint minim.
+                </p>
+                <div className="profile mt-auto">
+                  <img src={testimonials3} className="testimonial-img" alt="" />
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
                 </div>
-                <div className="col-lg-4 col-md-4 col-12">
-                  <div className="box">
-                    <div>
-                      <a href="#">
-                        <img
-                          src=" https://cdn.pixabay.com/photo/2017/03/01/22/18/avatar-2109804__340.png "
-                          className="img-fluid img-thumbnail"
-                          className="img-fluid img-thumbnail"
-                        />
-                      </a>
-                    </div>
-                    <p className="m-4">
-                      {" "}
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <h1>Abhishek Rawe</h1>
-                    <h2>Web Developer</h2>
-                  </div>
+              </div>
+            </div>
+
+            <div className="swiper-slide">
+              <div className="testimonial-item">
+                <div className="stars">
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                  multos export minim fugiat minim velit minim dolor enim duis
+                  veniam ipsum anim magna sunt elit fore quem dolore labore
+                  illum veniam.
+                </p>
+                <div className="profile mt-auto">
+                  <img src={testimonials4} className="testimonial-img" alt="" />
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="swiper-slide">
+              <div className="testimonial-item">
+                <div className="stars">
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua
+                  veniam tempor noster veniam enim culpa labore duis sunt culpa
+                  nulla illum cillum fugiat legam esse veniam culpa fore nisi
+                  cillum quid.
+                </p>
+                <div className="profile mt-auto">
+                  <img src={testimonials5} className="testimonial-img" alt="" />
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
                 </div>
               </div>
             </div>
           </div>
-          <a className="carousel-control-prev" href="#demo" data-slide="prev">
-            <span className="carousel-control-prev-icon"></span>
-          </a>
-          <a className="carousel-control-next" href="#demo" data-slide="next">
-            <span className="carousel-control-next-icon"></span>
-          </a>
+          <div className="swiper-pagination"></div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default ourClients;
+export default Testimonials;
