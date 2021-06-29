@@ -6,28 +6,22 @@ import "react-modal-video/css/modal-video.min.css";
 import "typeface-bree-serif";
 import "typeface-dm-sans";
 import { StickyProvider } from "contexts/app/app.provider";
-import SEO from "components/seo";
 import Layout from "components/layout";
-import Banner from "sections/banner";
 import Features from "sections/features";
-// import Pricing from 'sections/pricing';
+import Carousel from "components/carousel/corousel";
 import Services from "sections/services";
-import ProductFeature from "sections/product-feature";
-import CustomerSupport from "sections/customer-support";
 import Testimonials from "../components/Testimonials/Testimonials";
 
 export default function IndexPage() {
   return (
     <StickyProvider>
       <Layout>
-        <Banner />
+        <Carousel />
         {/* How We Work */}
         <Features />
         {/* How We Work Ends Here  */}
-        {/* <ProductFeature /> */}
         <Services />
         <Testimonials />
-        {/* <CustomerSupport /> */}
       </Layout>
     </StickyProvider>
   );

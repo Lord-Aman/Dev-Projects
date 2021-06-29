@@ -1,55 +1,129 @@
-import React from 'react'
+import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
-import Logo from "../../assets/logo.png"
 
 function footer() {
   return (
-    <footer id="myFooter">
-    <div className="container">
-        <div className="row">
-            <div className="col-sm-3">
-                <h5>Get started</h5>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Downloads</a></li>
-                </ul>
-            </div>
-            <div className="col-sm-3">
-                <h5>About us</h5>
-                <ul>
-                    <li><a href="#">Company Information</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Reviews</a></li>
-                </ul>
-            </div>
-            <div className="col-sm-3">
-                <h5>Support</h5>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Help desk</a></li>
-                    <li><a href="#">Forums</a></li>
-                </ul>
-            </div>
-            <div className="col-sm-3 info">
-                <h5>Information</h5>
-                <p> write about yourcompanyt, . </p>
-            </div>
+    <footer className="text-center text-lg-start bg-light text-muted">
+      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div className="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
         </div>
-    </div>
-    <div className="second-bar">
-       <div className="container">
-            <h2 className="logo"><a href="#"> LOGO </a></h2>
-            <div className="social-icons">
-                <a href="#" className="twitter"><i className="fa fa-twitter"></i></a>
-                <a href="#" className="facebook"><i className="fa fa-facebook"></i></a>
-                <a href="#" className="google"><i className="fa fa-google-plus"></i></a>
-            </div>
+
+        <div>
+          <a href="" className="me-4 text-reset">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="" className="me-4 text-reset">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="" className="me-4 text-reset">
+            <i className="fab fa-google"></i>
+          </a>
+          <a href="" className="me-4 text-reset">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a href="" className="me-4 text-reset">
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="" className="me-4 text-reset">
+            <i className="fab fa-github"></i>
+          </a>
         </div>
-    </div>
-</footer>
-  )
+      </section>
+
+      <section className="">
+        <div className="container text-center text-md-start mt-5">
+          <div className="row mt-3">
+            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">
+                <i className="fas fa-gem me-3"></i>Company name
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" className="text-reset">
+                  Angular
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">
+                  React
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">
+                  Vue
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">
+                  Laravel
+                </a>
+              </p>
+            </div>
+            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" className="text-reset">
+                  Pricing
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">
+                  Settings
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">
+                  Orders
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">
+                  Help
+                </a>
+              </p>
+            </div>
+
+            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>
+                <i className="fas fa-home me-3"></i> New York, NY 10012, US
+              </p>
+              <p>
+                <i className="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p>
+                <i className="fas fa-phone me-3"></i> + 01 234 567 88
+              </p>
+              <p>
+                <i className="fas fa-print me-3"></i> + 01 234 567 89
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        className="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05);"
+      >
+        © 2021 Copyright:
+        <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
+          MDBootstrap.com
+        </a>
+      </div>
+    </footer>
+  );
 }
 
-export default footer
+export default footer;
