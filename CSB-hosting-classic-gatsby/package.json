@@ -24,6 +24,7 @@
     "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-sharp": "^2.9.0",
     "glightbox": "^3.0.9",
+    "mdbreact": "^5.0.2",
     "polished": "^4.0.5",
     "prop-types": "^15.7.2",
     "rc-drawer": "^4.1.0",
