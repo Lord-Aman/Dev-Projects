@@ -9,7 +9,6 @@ import Layout from "components/layout";
 import Features from "sections/Features/features";
 import Carousel from "components/carousel/corousel";
 import Services from "sections/OurServices/services";
-import Testimonials from "components/Testimonials/Testimonials";
 
 export default function IndexPage() {
   return (
@@ -20,7 +19,6 @@ export default function IndexPage() {
         <Features />
         {/* How We Work Ends Here  */}
         <Services />
-        <Testimonials />
       </Layout>
     </StickyProvider>
   );
