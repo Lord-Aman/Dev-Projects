@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Button, Image } from "theme-ui";
+import { jsx, Box, Container, Image } from "theme-ui";
 import { rgba } from "polished";
 import SectionHeading from "components/section-heading";
 import illustration from "assets/images/banner-illustration.png";
@@ -15,9 +15,6 @@ const Banner = () => {
             description="A service agency with customer satisfaction"
           />
           <Box sx={styles.illustration}>
-            <Box sx={styles.buttonWrapper}>
-              <Button>Get Started</Button>
-            </Box>
             <Image src={illustration} alt="illustration" />
           </Box>
         </Box>
