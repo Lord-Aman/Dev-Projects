@@ -1,14 +1,14 @@
-import React from "react";
-
-import "rc-drawer/assets/index.css";
 import "assets/css/react-slick.css";
+import Carousel from "components/carousel/corousel";
+import Layout from "components/layout";
+import { StickyProvider } from "contexts/app/app.provider";
+import "rc-drawer/assets/index.css";
+import React from "react";
+import Features from "sections/Features/features";
+import Services from "sections/OurServices/services";
 import "typeface-bree-serif";
 import "typeface-dm-sans";
-import { StickyProvider } from "contexts/app/app.provider";
-import Layout from "components/layout";
-import Features from "sections/Features/features";
-import Carousel from "components/carousel/corousel";
-import Services from "sections/OurServices/services";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 export default function IndexPage() {
   return (
@@ -19,6 +19,7 @@ export default function IndexPage() {
         <Features />
         {/* How We Work Ends Here  */}
         <Services />
+        <Testimonials />
       </Layout>
     </StickyProvider>
   );
