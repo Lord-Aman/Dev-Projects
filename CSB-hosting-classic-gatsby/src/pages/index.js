@@ -9,6 +9,7 @@ import Services from "sections/OurServices/services";
 import "typeface-bree-serif";
 import "typeface-dm-sans";
 import Testimonials from "../components/Testimonials/Testimonials";
+import Clients from "../sections/OurClients/Clients";
 
 export default function IndexPage() {
   return (
@@ -19,6 +20,7 @@ export default function IndexPage() {
         <Features />
         {/* How We Work Ends Here  */}
         <Services />
+        <Clients />
         <Testimonials />
       </Layout>
     </StickyProvider>
