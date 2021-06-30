@@ -1,18 +1,19 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import Banner from "sections/banner";
+import Banner1 from "sections/banner1";
+import Banner2 from "sections/banner2";
 
 const Corousel = () => {
   return (
     <Carousel fade>
       <Carousel.Item>
-        <Banner />
+        <Banner1 />
       </Carousel.Item>
       <Carousel.Item>
-        <Banner />
+        <Banner2 />
       </Carousel.Item>
       <Carousel.Item>
-        <Banner />
+        <Banner1 />
       </Carousel.Item>
     </Carousel>
   );

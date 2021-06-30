@@ -3,7 +3,7 @@ import { jsx, Box, Button, Container, Image } from "theme-ui";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import Slider from "react-slick";
 import "assets/css/slick.min.css";
-import SectionHeading from "./section-heading";
+import SectionHeading from "components/section-heading";
 import uber from "assets/images/clients/uber.png";
 import google from "assets/images/clients/google.png";
 import paypal from "assets/images/clients/paypal.png";
@@ -96,10 +96,7 @@ const Clients = () => {
   return (
     <Box id="clients" as="section" sx={styles.section}>
       <Container>
-        <SectionHeading
-          slogan="Meet Our Clients"
-          title="This guys are using our service and they're more than happier ever."
-        />
+        <SectionHeading slogan="" title="Meet Our Clients" />
         <Slider sx={styles.clients} {...settings}>
           {clients?.map((client) => (
             <Box key={client.id} as="figure" sx={styles.logo}>

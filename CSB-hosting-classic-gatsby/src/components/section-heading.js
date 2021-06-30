@@ -38,7 +38,7 @@ const styles = {
     lineHeight: 2.5,
   },
   title: {
-    color: "#00A99D",
+    color: "#4589d6",
     fontWeight: 600,
     fontSize: [4, null, null, 6],
     lineHeight: [1.33, 1.33, 1.5],
