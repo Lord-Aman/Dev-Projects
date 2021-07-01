@@ -193,6 +193,12 @@ section {
 
 .services .service-box.blue {
   border-bottom: 3px solid #2db6fa;
+  background: rgba( 197, 197, 244, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.0px );
+  -webkit-backdrop-filter: blur( 5.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .services .service-box.blue .icon {
@@ -205,11 +211,18 @@ section {
 }
 
 .services .service-box.blue:hover {
-  background: #2db6fa;
+  background: #616FD7;
+  
 }
 
 .services .service-box.orange {
   border-bottom: 3px solid #f68c09;
+  background: rgba( 197, 197, 244, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.0px );
+  -webkit-backdrop-filter: blur( 5.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .services .service-box.orange .icon {
@@ -222,11 +235,17 @@ section {
 }
 
 .services .service-box.orange:hover {
-  background: #f68c09;
+  background: #616FD7;
 }
 
 .services .service-box.green {
   border-bottom: 3px solid #08da4e;
+  background: rgba( 197, 197, 244, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.0px );
+  -webkit-backdrop-filter: blur( 5.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .services .service-box.green .icon {
@@ -239,11 +258,17 @@ section {
 }
 
 .services .service-box.green:hover {
-  background: #08da4e;
+  background: #616FD7;
 }
 
 .services .service-box.red {
   border-bottom: 3px solid #e9222c;
+  background: rgba( 197, 197, 244, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.0px );
+  -webkit-backdrop-filter: blur( 5.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .services .service-box.red .icon {
@@ -256,11 +281,17 @@ section {
 }
 
 .services .service-box.red:hover {
-  background: #e9222c;
+  background: #616FD7;
 }
 
 .services .service-box.purple {
   border-bottom: 3px solid #b50edf;
+  background: rgba( 197, 197, 244, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.0px );
+  -webkit-backdrop-filter: blur( 5.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .services .service-box.purple .icon {
@@ -273,11 +304,17 @@ section {
 }
 
 .services .service-box.purple:hover {
-  background: #b50edf;
+  background: #616FD7;
 }
 
 .services .service-box.pink {
   border-bottom: 3px solid #f51f9c;
+  background: rgba( 197, 197, 244, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.0px );
+  -webkit-backdrop-filter: blur( 5.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .services .service-box.pink .icon {
@@ -290,7 +327,7 @@ section {
 }
 
 .services .service-box.pink:hover {
-  background: #f51f9c;
+  background: #616FD7;
 }
 
 .services .service-box:hover h3,
