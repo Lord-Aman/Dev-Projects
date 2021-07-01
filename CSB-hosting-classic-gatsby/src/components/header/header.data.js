@@ -19,4 +19,9 @@ export default [
     label: "Clients",
     offset: -70,
   },
+  {
+    path: "blog",
+    label: "Blogs",
+    offset: -60,
+  },
 ];

@@ -11,7 +11,7 @@ const services = () => {
       <section id="features" className="features">
         <div className="container">
           <div className="row feature-icons">
-            <h3>Ratione mollitia eos ab laudantium rerum beatae quo</h3>
+            <h3>We cover all the digital services that you require</h3>
 
             <div className="row">
               <div className="col-xl-4 text-center">
@@ -23,7 +23,7 @@ const services = () => {
                   <div className="col-md-6 icon-box">
                     <i className="ri-line-chart-line"></i>
                     <div>
-                      <h4>Corporis voluptates sit</h4>
+                      <h4>Web Development</h4>
                       <p>
                         Consequuntur sunt aut quasi enim aliquam quae harum
                         pariatur laboris nisi ut aliquip
@@ -34,7 +34,7 @@ const services = () => {
                   <div className="col-md-6 icon-box">
                     <i className="ri-stack-line"></i>
                     <div>
-                      <h4>Ullamco laboris nisi</h4>
+                      <h4>App Development</h4>
                       <p>
                         Excepteur sint occaecat cupidatat non proident, sunt in
                         culpa qui officia deserunt
@@ -45,7 +45,7 @@ const services = () => {
                   <div className="col-md-6 icon-box">
                     <i className="ri-brush-4-line"></i>
                     <div>
-                      <h4>Labore consequatur</h4>
+                      <h4>Social Media Management</h4>
                       <p>
                         Aut suscipit aut cum nemo deleniti aut omnis. Doloribus
                         ut maiores omnis facere
@@ -56,7 +56,7 @@ const services = () => {
                   <div className="col-md-6 icon-box">
                     <i className="ri-magic-line"></i>
                     <div>
-                      <h4>Beatae veritatis</h4>
+                      <h4>Graphics Designing</h4>
                       <p>
                         Expedita veritatis consequuntur nihil tempore laudantium
                         vitae denat pacta
@@ -67,7 +67,7 @@ const services = () => {
                   <div className="col-md-6 icon-box">
                     <i className="ri-command-line"></i>
                     <div>
-                      <h4>Molestiae dolor</h4>
+                      <h4>Logo Designing</h4>
                       <p>
                         Et fuga et deserunt et enim. Dolorem architecto ratione
                         tensa raptor marte
@@ -78,7 +78,7 @@ const services = () => {
                   <div className="col-md-6 icon-box">
                     <i className="ri-radar-line"></i>
                     <div>
-                      <h4>Explicabo consectetur</h4>
+                      <h4>Video Production</h4>
                       <p>
                         Est autem dicta beatae suscipit. Sint veritatis et sit
                         quasi ab aut inventore
@@ -102,7 +102,7 @@ const services = () => {
             <div className="col-lg-4 col-md-6">
               <div className="service-box blue">
                 <i className="ri-discuss-line icon"></i>
-                <h3>Nesciunt Mete</h3>
+                <h3>Web Development</h3>
                 <p>
                   Provident nihil minus qui consequatur non omnis maiores. Eos
                   accusantium minus dolores iure perferendis tempore et
@@ -117,7 +117,7 @@ const services = () => {
             <div className="col-lg-4 col-md-6">
               <div className="service-box orange">
                 <i className="ri-discuss-line icon"></i>
-                <h3>Eosle Commodi</h3>
+                <h3>App Development</h3>
                 <p>
                   Ut autem aut autem non a. Sint sint sit facilis nam iusto
                   sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
@@ -131,7 +131,7 @@ const services = () => {
             <div className="col-lg-4 col-md-6" data-aos-delay="400">
               <div className="service-box green">
                 <i className="ri-discuss-line icon"></i>
-                <h3>Ledo Markt</h3>
+                <h3>Social Media Management</h3>
                 <p>
                   Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
                   Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
@@ -145,7 +145,7 @@ const services = () => {
             <div className="col-lg-4 col-md-6" data-aos-delay="500">
               <div className="service-box red">
                 <i className="ri-discuss-line icon"></i>
-                <h3>Asperiores Commodi</h3>
+                <h3>Graphic Designing</h3>
                 <p>
                   Non et temporibus minus omnis sed dolor esse consequatur.
                   Cupiditate sed error ea fuga sit provident adipisci neque.
@@ -159,7 +159,7 @@ const services = () => {
             <div className="col-lg-4 col-md-6" data-aos-delay="600">
               <div className="service-box purple">
                 <i className="ri-discuss-line icon"></i>
-                <h3>Velit Doloremque.</h3>
+                <h3>Logo Designing</h3>
                 <p>
                   Cumque et suscipit saepe. Est maiores autem enim facilis ut
                   aut ipsam corporis aut. Sed animi at autem alias eius labore.
@@ -173,7 +173,7 @@ const services = () => {
             <div className="col-lg-4 col-md-6" data-aos-delay="700">
               <div className="service-box pink">
                 <i className="ri-discuss-line icon"></i>
-                <h3>Dolori Architecto</h3>
+                <h3>Video Production</h3>
                 <p>
                   Hic molestias ea quibusdam eos. Fugiat enim doloremque aut
                   neque non et debitis iure. Corrupti recusandae ducimus enim.

@@ -10,6 +10,7 @@ import "typeface-bree-serif";
 import "typeface-dm-sans";
 import Testimonials from "../sections/Testimonials/testimonials";
 import Clients from "../sections/OurClients/Clients";
+import Blogs from "sections/blog"
 
 export default function IndexPage() {
   return (
@@ -22,6 +23,7 @@ export default function IndexPage() {
         <Services />
         <Clients />
         <Testimonials />
+        <Blogs />
       </Layout>
     </StickyProvider>
   );
