@@ -8,7 +8,7 @@ import Features from "sections/Features/features";
 import Services from "sections/OurServices/services";
 import "typeface-bree-serif";
 import "typeface-dm-sans";
-import Testimonials from "../components/Testimonials/Testimonials";
+import Testimonials from "../sections/Testimonials/testimonials";
 import Clients from "../sections/OurClients/Clients";
 
 export default function IndexPage() {

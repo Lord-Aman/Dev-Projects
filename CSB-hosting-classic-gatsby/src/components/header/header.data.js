@@ -2,12 +2,12 @@ export default [
   {
     path: "banner",
     label: "Home",
-    offset: -30,
+    offset: -10000,
   },
   {
     path: "features",
     label: "How we Work",
-    offset: 0,
+    offset: -700,
   },
   {
     path: "services",
@@ -15,8 +15,8 @@ export default [
     offset: -40,
   },
   {
-    path: "support",
-    label: "About Us",
+    path: "clients",
+    label: "Clients",
     offset: -70,
   },
 ];
