@@ -79,7 +79,7 @@ function footer() {
       <div className="text-center p-4">
         © 2021 Copyright:
         <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-          MDBootstrap.com
+          Tech Master GoGo
         </a>
       </div>
     </footer>

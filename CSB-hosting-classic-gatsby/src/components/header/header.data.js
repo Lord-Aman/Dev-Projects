@@ -7,7 +7,7 @@ export default [
   {
     path: "features",
     label: "How we Work",
-    offset: -700,
+    offset: -750,
   },
   {
     path: "services",
