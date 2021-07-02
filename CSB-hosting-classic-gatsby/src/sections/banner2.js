@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Flex, Heading, Text, Image } from "theme-ui";
-import sectionImage from "assets/Animated/banner2.gif";
+import sectionImage from "assets/Animated/amplify.gif";
 // import sectionImage from "assets/banner-2.svg";
 
 const BANNER_DATA = {

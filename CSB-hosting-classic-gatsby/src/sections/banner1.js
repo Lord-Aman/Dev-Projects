@@ -1,8 +1,7 @@
 import React from "react";
 import { Box, Container, Flex, Heading, Text, Image } from "theme-ui";
-import sectionImage from "assets/Animated/tenor.gif";
+import sectionImage from "assets/Animated/banner1.gif";
 // import sectionImage from "assets/banner.svg";
-import "./banner1.css"
 
 const BANNER_DATA = {
   title: "A Creative way to grow your Exciting Business ideas",

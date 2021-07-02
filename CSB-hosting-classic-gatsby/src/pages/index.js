@@ -16,7 +16,7 @@ import BackgroundAnimation from "components/Animations/backgroundAnimation"
 export default function IndexPage() {
   return (
     <StickyProvider>
-        {/* <BackgroundAnimation/> */}
+        <BackgroundAnimation/>
       <Layout>
         <Carousel />
         {/* How We Work */}
