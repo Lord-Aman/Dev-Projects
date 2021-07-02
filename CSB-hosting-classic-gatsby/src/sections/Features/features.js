@@ -1,9 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "glightbox/dist/css/glightbox.css";
-import value1 from "assets/images/values-1.png";
-import value2 from "assets/images/values-2.png";
-import value3 from "assets/images/values-3.png";
+import value1 from "assets/Animated/bicycle.gif";
+import value2 from "assets/Animated/cafe.gif";
+import value3 from "assets/Animated/coffee.gif";
 import "./features.css";
 
 const features = () => {
