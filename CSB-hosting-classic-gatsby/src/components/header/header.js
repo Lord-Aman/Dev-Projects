@@ -8,6 +8,8 @@ import { DrawerProvider } from "contexts/drawer/drawer.provider";
 import lock from "assets/lock.svg";
 import MobileDrawer from "./mobileDrawer";
 import menuItems from "./header.data";
+import {Dropdown} from "react-bootstrap"
+import "./header.css"
 
 export default function Header({ className }) {
   return (
@@ -17,6 +19,7 @@ export default function Header({ className }) {
           <Logo />
 
           <Flex as="nav" sx={styles.nav}>
+
             {menuItems.map(({ path, label, offset }, i) => (
               <ScrollLink
                 activeClass="active"
@@ -31,6 +34,17 @@ export default function Header({ className }) {
                 {label}
               </ScrollLink>
             ))}
+               <Dropdown>
+              <Dropdown.Toggle className="dropdown" id="dropdown-basic">
+                Explore More
+              </Dropdown.Toggle>
+                
+              <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+              </Dropdown.Menu>
+           </Dropdown>
           </Flex>
           <Link path="/" sx={styles.loginBtn}>
             <Image src={lock} alt="" />

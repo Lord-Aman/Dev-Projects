@@ -1,0 +1,17 @@
+.dropdown{
+    color: black;
+    background:none;
+    margin-top: -3px;
+    outline: none;
+    border:none;
+}
+.dropdown:hover{
+    background-color: #4589d685;
+    color: #fff;
+}
+@media only screen and (max-width: 600px) {
+   .dropdown{
+       margin-top: 2px;
+       margin-left: -6px;
+   }
+  }

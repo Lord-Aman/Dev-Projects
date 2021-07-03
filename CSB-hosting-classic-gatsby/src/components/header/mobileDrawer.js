@@ -7,6 +7,9 @@ import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { Link as ScrollLink } from "react-scroll";
 import menuItems from "./header.data";
 import Logo from "components/logo";
+import {Dropdown} from "react-bootstrap"
+import "./header.css"
+
 
 const MobileDrawer = () => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -49,6 +52,17 @@ const MobileDrawer = () => {
                 {label}
               </ScrollLink>
             ))}
+          <Dropdown>
+              <Dropdown.Toggle className="dropdown" id="dropdown-basic">
+                Explore More
+              </Dropdown.Toggle>
+                
+              <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+              </Dropdown.Menu>
+           </Dropdown>
           </Box>
 
           <Box sx={styles.menuFooter}>
