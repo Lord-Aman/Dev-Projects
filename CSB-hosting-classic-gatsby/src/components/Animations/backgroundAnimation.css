@@ -59,7 +59,7 @@ body{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: hsla(203, 27%, 85%, 0);
+    background: hsla(203, 27%, 74%, 0.158);
     animation: animate 25s linear infinite;
     bottom: -150px;
     
