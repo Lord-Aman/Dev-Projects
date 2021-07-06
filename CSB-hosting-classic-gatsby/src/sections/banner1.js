@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container, Flex, Heading, Text, Image } from "theme-ui";
 import sectionImage from "assets/Animated/banner1.gif";
+import "./banner.css";
 // import sectionImage from "assets/banner.svg";
 
 const BANNER_DATA = {
@@ -19,7 +20,13 @@ const Banner = () => {
             <Text as="p">{text}</Text>
           </Box>
           <Box sx={styles.images}>
-            <Image className ="gif" src={image} width="740" height="558" alt="section image" />
+            <Image
+              className="gif"
+              src={image}
+              width="740"
+              height="558"
+              alt="section image"
+            />
           </Box>
         </Flex>
       </Container>

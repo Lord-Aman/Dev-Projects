@@ -1,0 +1,9 @@
+.gif {
+  margin: -100px;
+}
+@media (max-width: 600px) {
+  .gif {
+    margin: -25px;
+    margin-left: 12px;
+  }
+}

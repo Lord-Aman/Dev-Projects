@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Container, Flex, Heading, Text, Image } from "theme-ui";
 import sectionImage from "assets/Animated/amplify.gif";
 // import sectionImage from "assets/banner-2.svg";
+import "./banner.css";
 
 const BANNER_DATA = {
   title: "A Creative way to grow your Exciting Business ideas",
@@ -19,7 +20,13 @@ const Banner = () => {
             <Text as="p">{text}</Text>
           </Box>
           <Box sx={styles.images}>
-            <Image src={image} width="740" height="558" alt="section image" />
+            <Image
+              className="gif"
+              src={image}
+              width="740"
+              height="558"
+              alt="section image"
+            />
           </Box>
         </Flex>
       </Container>
